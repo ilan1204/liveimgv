@@ -42,7 +42,7 @@ End Sub
 Private Sub pnl_Touch (Action As Int, X As Float, Y As Float)
 	Select Action
 		Case 0
-			startMoving =  distance(X,linePosX,vpH/2,Y) < touchDistance 
+			startMoving = distance(X,linePosX,vpH/2,Y) < touchDistance 
 		Case 1
 			startMoving = False
 		Case 2
