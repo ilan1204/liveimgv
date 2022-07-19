@@ -1,4 +1,4 @@
-# liveimgv
+# liveImageview
 Live Imageview - [B4X]
 
 A simple Image Comparison Slider for B4X (B4A, B4i, B4J).
