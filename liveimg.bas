@@ -9,8 +9,7 @@ Sub Class_Globals
 	Private xui As XUI
 	Private cnv As B4XCanvas
 	Private livebmp1, livebmp2 As B4XBitmap
-	Private linePosX As Float
-	Private vpW, vpH As Float
+	Private vpW, vpH, linePosX As Float
 	Private startMoving As Boolean
 	Private touchDistance As Float = 10dip
 	Private gapDistance As Float = 1dip
@@ -43,7 +42,7 @@ End Sub
 Private Sub pnl_Touch (Action As Int, X As Float, Y As Float)
 	Select Action
 		Case 0
-			If distance(X,linePosX,vpH/2,Y) < touchDistance Then startMoving = True
+			startMoving =  distance(X,linePosX,vpH/2,Y) < touchDistance 
 		Case 1
 			startMoving = False
 		Case 2
